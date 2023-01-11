@@ -25,3 +25,27 @@ Route::get('/contact', function () {
 Route::get('/blog', function () {
     return view('frontend.blog');
 });
+
+Route::get('/adminn', function () {
+    return view('admin.index');
+});
+
+Route::get('/adminn/products', function () {
+    return view('admin.products');
+});
+
+Route::get('/adminn/login', function () {
+    return view('admin.login');
+});
+
+Route::get('/adminn/accounts', function () {
+    return view('admin.accounts');
+});
+
+Route::get('/adminn/edit-product', function () {
+    return view('admin.edit-product');
+});
+
+Route::get('/adminn/add-product', function () {
+    return view('admin.add-product');
+});
