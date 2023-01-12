@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PostController;
+use App\Models\PostModel;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,6 +48,4 @@ Route::get('/adminn/edit-product', function () {
     return view('admin.edit-product');
 });
 
-Route::get('/adminn/add-product', function () {
-    return view('admin.add-product');
-});
+Route::resource('/adminn/add_product' , PostController::class );
